@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程式勇者：拯救公主大作戰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start-screen">
+        <h1>程式勇者：拯救公主大作戰</h1>
+        <p>扮演勇者，透過回答程式問題，閃避障礙物，拯救公主！</p>
+        <p>按下空白鍵跳躍。</p>
+        <button id="start-game-btn">開始遊戲</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="game-area">
+            <div id="player"></div>
+            <div id="score">分數：0</div>
+            <div id="lives-container"> 生命: <span id="lives"></span> </div>
+        </div>
+
+        <div id="question-area" class="hidden">
+            <p id="question-text"></p>
+            <div id="options-container">
+                <button class="option-btn" data-answer="A"></button>
+                <button class="option-btn" data-answer="B"></button>
+                <button class="option-btn" data-answer="C"></button>
+                <button class="option-btn" data-answer="D"></button>
+            </div>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h2>遊戲結束！</h2>
+            <p>您的總分是：<span id="final-score">0</span></p>
+            <input type="text" id="player-name" placeholder="輸入您的名字">
+            <button id="submit-score-btn">提交分數</button>
+            <button id="restart-game-btn">重新挑戰</button>
+        </div>
+
+        <div id="win-screen" class="hidden">
+            <div class="win-content">
+                <h2>恭喜您，勇者！</h2>
+                <p>您成功拯救了公主！</p>
+                <p>您的最終分數是：<span id="win-final-score">0</span></p>
+
+                <input type="text" id="player-name-win" placeholder="輸入您的名字">
+                <button id="submit-score-win-btn">提交分數</button>
+                <button id="restart-game-win-btn">再次挑戰</button>
+                <button id="show-leaderboard-win-btn">查看英雄榜</button>
+            </div>
+        </div>
+        <div id="leaderboard-screen" class="hidden">
+            <h2>英雄榜</h2>
+            <ul id="leaderboard-list">
+            </ul>
+            <button id="close-leaderboard-btn">關閉</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
