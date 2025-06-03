@@ -79,7 +79,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../images/background.png'); /* 設定背景圖片 */
+    background-image: url('images/background.png'); /* 設定背景圖片 */
     background-repeat: repeat-x; /* 關鍵：背景圖片只在水平方向重複 */
     background-position: 0 0; /* 初始背景位置，這將是我們在 JS 中移動的屬性 */
     background-size: auto 100%; /* 讓背景圖片的高度填滿容器，寬度按比例自動調整 */
@@ -88,7 +88,7 @@ body {
 #player {
     width: 50px; /* 根據您的圖片調整寬度，確保兩張圖片寬度相近或相同 */
     height: 70px; /* 根據您的圖片調整高度，確保兩張圖片高度相近或相同 */
-    background-image: url('../images/Hero_normal.png');
+    background-image: url('images/Hero_normal.png');
     background-size: contain; /* 確保圖片縮放以適應新的 div 大小 */
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -124,7 +124,7 @@ body {
 .heart-icon {
     width: 30px;   /* 調整愛心圖片的寬度，根據你的圖片實際大小和遊戲風格調整 */
     height: 30px;  /* 調整愛心圖片的高度 */
-    background-image: url('../images/heart.png'); /* 替換為你的愛心圖片路徑 */
+    background-image: url('images/heart.png'); /* 替換為你的愛心圖片路徑 */
     background-size: contain; /* 確保圖片縮放以適應 div 大小 */
     background-repeat: no-repeat;
     background-position: center;
@@ -322,7 +322,7 @@ body {
     /* text-align: center; /* 這個可以移除 */
     z-index: 100;
     color: #eee;
-    background-image: url('../images/princess_saved.png');
+    background-image: url('images/princess_saved.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
