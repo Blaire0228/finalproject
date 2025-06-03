@@ -272,7 +272,7 @@ const wrongSound = new Audio('audio/wrong.mp3');
 wrongSound.volume = 0.5;
 
 // 背景音樂 (音量可以根據需求調整)
-const backgroundMusic = new Audio('./audio/bgm.mp3');
+const backgroundMusic = new Audio('audio/bgm.mp3');
 backgroundMusic.loop = true; // 設置循環播放
 backgroundMusic.volume = 0.3; // 調整背景音樂音量，通常比音效小
 
@@ -309,7 +309,7 @@ function startGame() {
     player.style.bottom = `${playerBottom}px`;
 
     player.style.left = `${playerLeft}px`;
-    player.style.backgroundImage = 'url("../images/Hero_normal.png")';
+    player.style.backgroundImage = 'url("images/Hero_normal.png")';
 
     const obstacles = document.querySelectorAll('.obstacle');
     obstacles.forEach(obstacle => obstacle.remove());
@@ -360,12 +360,12 @@ function gameLoop() {
             playerBottom = 50;
             isJumping = false;
             verticalVelocity = 0;
-            player.style.backgroundImage = 'url("../images/Hero_normal.png")';
+            player.style.backgroundImage = 'url("images/Hero_normal.png")';
         }
         player.style.bottom = `${playerBottom}px`;
     } else {
         if (player.style.backgroundImage.includes('Hero_jump.png')) {
-            player.style.backgroundImage = 'url("../images/Hero_normal.png")';
+            player.style.backgroundImage = 'url("images/Hero_normal.png")';
         }
     }
 
