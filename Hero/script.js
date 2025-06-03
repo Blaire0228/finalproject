@@ -338,7 +338,7 @@ function jump() {
         verticalVelocity = jumpVelocity;
 
         // >>> 確保這行是切換到跳躍圖片 <<<
-        player.style.backgroundImage = 'url("../images/Hero_jump.png")';
+        player.style.backgroundImage = 'url("images/Hero_jump.png")';
         jumpSound.currentTime = 0; // 重置音效，確保每次都能從頭播放
         jumpSound.play();
     }
