@@ -30,9 +30,9 @@ const livesDisplay = document.getElementById('lives'); // 這裡仍然指向 spa
 const questionArea = document.getElementById('question-area');
 // 障礙物圖片列表
 const obstacleImages = [
-    './images/obstacle1.png',
-    './images/obstacle2.png',
-    './images/obstacle3.png',
+    'images/obstacle1.png',
+    'images/obstacle2.png',
+    'images/obstacle3.png',
     // 根據您準備的圖片數量，繼續添加 'images/obstacle4.png' 等
 ];
 const questionText = document.getElementById('question-text');
@@ -266,9 +266,9 @@ let currentQuestion = null; // 當前顯示的問題
 let currentObstacle = null; // 當前觸發問題的障礙物
 
 // 音效物件
-const jumpSound = new Audio('./audio/jump.mp3'); // 確保路徑正確
-const correctSound = new Audio('./audio/correct.mp3');
-const wrongSound = new Audio('./audio/wrong.mp3');
+const jumpSound = new Audio('audio/jump.mp3'); // 確保路徑正確
+const correctSound = new Audio('audio/correct.mp3');
+const wrongSound = new Audio('audio/wrong.mp3');
 wrongSound.volume = 0.5;
 
 // 背景音樂 (音量可以根據需求調整)
